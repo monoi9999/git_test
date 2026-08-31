@@ -18,9 +18,6 @@ title: 모노의 블로그
           {{ post.title | escape }}
         </a>
       </h3>
-      {%- if site.show_excerpts != false -%}
-        {{ post.excerpt }}
-      {%- endif -%}
     </li>
     {%- endfor -%}
   </ul>

@@ -1,0 +1,16 @@
+title: 모노의 블로그
+description: AI / 데이터 분석 공부 기록
+theme: minima
+minima:
+  skin: auto
+  social_links:
+    github: monoi9999
+
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+show_excerpts: true

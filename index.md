@@ -11,6 +11,7 @@ title: 모노의 블로그
   <ul class="post-list">
     {%- assign sorted_posts = site.posts | sort: 'date' -%}
     {%- for post in sorted_posts -%}
+    {%- unless post.hidden -%}
     <li>
       <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
       <h3>
@@ -19,6 +20,7 @@ title: 모노의 블로그
         </a>
       </h3>
     </li>
+    {%- endunless -%}
     {%- endfor -%}
   </ul>
 
